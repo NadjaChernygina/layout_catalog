@@ -1,0 +1,144 @@
+.card-container {
+  box-sizing: border-box;
+  grid-template-columns: repeat(1, 200px);
+  justify-content: center;
+  gap: 46px 48px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  display: grid;
+}
+
+@media (width >= 488px) {
+  .card-container {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media (width >= 768px) {
+  .card-container {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media (width >= 1024px) {
+  .card-container {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 32px 16px 16px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  transition: all .3s;
+  display: flex;
+}
+
+.card__image {
+  margin: 0 0 24px;
+  padding: 0 3px;
+}
+
+.card__image img {
+  width: 160px;
+  height: 134px;
+  margin: 0 auto;
+  display: block;
+}
+
+.card__body {
+  flex-direction: column;
+  padding: 16px 0 0;
+  display: flex;
+}
+
+.card__header {
+  flex-direction: column;
+  display: flex;
+}
+
+.card__title {
+  color: #060b35;
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.card:hover .card__title {
+  color: #34568b;
+}
+
+.card__code {
+  color: #616070;
+  margin: 0 0 16px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.card__rating {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 24px;
+  display: flex;
+}
+
+.card__reviews {
+  color: #060b35;
+  margin: 2px 0 0;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.card__price {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 16px;
+  display: flex;
+}
+
+.card__price-label {
+  color: #616070;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.card__price-value {
+  color: #060b35;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.card__button {
+  color: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #00acdc;
+  border: 1px solid #00acdc;
+  border-radius: 5px;
+  height: 40px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  transition: all .3s;
+}
+
+.card__button:hover {
+  color: #00acdc;
+  background: #fff;
+  border: 1px solid #00acdc;
+}
+/*# sourceMappingURL=index.ebaeea9c.css.map */
